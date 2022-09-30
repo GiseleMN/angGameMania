@@ -1,0 +1,80 @@
+.section-newAndPreview h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 50px;
+    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'work sans', sans-serif bold;
+}
+
+.novidades-itens p {
+    width: 50%;
+    height: 25%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'work sans', sans-serif;
+}
+
+.novidades-itens a {
+    color: red;
+}
+
+.novidades-itens img {
+    width: 50%;
+    height: 25%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.item1 {
+    display: flex;
+    direction: rtl;
+    margin: 20px;
+}
+
+.item2 {
+    display: flex;
+}
+
+.item2 img {
+    position: relative;
+    top: -50px;
+}
+
+.item2 p {
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+@media screen and (max-width:1200) {
+
+    /* secao de novidades */
+    .novidades-itens p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    /*novidades */
+    .section-newAndPreview h2 {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .new {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new p {
+        width: 100vw;
+        font-size: 15px;
+    }
+
+}

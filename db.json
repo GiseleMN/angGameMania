@@ -1,0 +1,68 @@
+{
+  "user": [
+    {
+      "email": "gisele@email.com",
+      "password": "123",
+      "name": "Gisele",
+      "id": 1
+    },
+    {
+      "email": "kevin@email.com",
+      "password": "321",
+      "name": "kevin",
+      "id": 2
+    }
+  ],
+  "jogos": [
+    {
+      "id": 1,
+      "imagem": "assets/img/PUBG-Battlegrounds-900x503 1.png",
+      "descricaoImg": "Imagem Jogo PUBG",
+      "routerLink": "https://na.battlegrounds.pubg.com",
+      "name": "Battlegrounds(PUBG)",
+      "descricao": "é um jogo do gênero battle royale, uma mistura de sobrevivência e exploração de territórios."
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/minecraftP.png",
+      "descricaoImg": "Img Minecraft",
+      "routerLink": "https://www.minecraft.net/pt-pt",
+      "name": "MineCraft",
+      "descricao": "A ideia básica desse jogo que conquista multidões é a construção por blocos. Os competidores precisam recolher recursos para que possam sobreviver, criando ambientes de maneira criativa."
+    },
+    {
+      "id": 3,
+      "imagem": "assets/img/FortiniteP.png",
+      "descricaoImg": "img Fortinite",
+      "routerLink": "https://www.epicgames.com/fortnite/pt-BR/home",
+      "name": "Fortinite",
+      "descricao": "Um dos jogos mais populares e celebrados em todo o mundo, Fortnite foi lançado em 2017 e atraiu 125 milhões de jogadores somente no seu primeiro ano de estreia."
+    },
+    {
+      "id": 4,
+      "imagem": "assets/img/leagueOflegendsP.png",
+      "descricaoImg": "img LOL",
+      "routerLink": "https://www.leagueoflegends.com/pt-br/",
+      "name": "League of Legends",
+      "descricao": "é o favorito entre os gamers, uma verdadeira febre no mundo dos jogos online! - O League of Legends conta com competições internacionais enormes,reunindo fãs de todos os lugares do mundo."
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/img/produtos/fifa2022.png",
+      "descricaoImg": "Imagem Jogo Fifa 2022",
+      "routerLink": "https://www.ea.com/pt-br/games/fifa/fifa-23",
+      "name": "EletronicArts (EA)",
+      "descricao": "comunicou encerramento de pareceria com a FIFA, com isso a desenvolvedora oficializou que o novo nome da marca será mesmo EASportsFC, novidades mais concretas em 2023... Enquanto isso curtam o lançamento do FIFA 2022."
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/produtos/callDuty.png",
+      "descricaoImg": "Imagem Capa Jogo Call of Duty",
+      "routerLink": "https://www.callofduty.com/br/pt",
+      "name": "Call of Duty",
+      "descricao": ": Modern Warfare II - novo jogo popular da franquia em primeira pessoa da Actvision chega em 28 de outubro para PlayStation 5 e 4, Xbox Series X/S e One, e para PC via os serviços de Battle.net e Steam. ( No Brasil será vendido exclusivamente em formato digital.)"
+    }
+  ]
+}

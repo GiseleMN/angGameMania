@@ -1,0 +1,39 @@
+<section>
+    <div class="p-box">
+
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+
+            <div class="area-logar">
+                <h1>Faça seu Login e boas compras!</h1>
+                <a routerLink=""><img src="assets/img/logo.png" alt="Logo Game Mania"></a>
+                <div class="box-input">
+                    <label for="email">Digite aqui seu e-mail</label>
+                    <input type="email" form="" id="email" name="email" placeholder=" Ex. exemplo@exemplo.com "
+                        autofocus autocomplete required [(ngModel)]="userModel.email">
+                    <label for="password">Digite aqui sua senha</label>
+                    <input type="password" form="" id="senha" name="password" placeholder=" Digite sua senha" required
+                        [(ngModel)]="userModel.password">
+                </div>
+                <div class="area-cadastro">
+                    <!-- <div class="salvar-senha">
+                        <input type="radio" id="Salvar" name="yes">
+                        <label for="yes"> Salvar minha senha</label>
+                    </div> -->
+                    <div class="fazer-cadastro">
+                        <p>Não tem um cadastro?</p><a routerLink="" method="post" class="">Clique
+                            aqui</a>
+                        <p> e cadastre-se!!</p>
+                    </div>
+                    <button type="submit" id="botao-enviar" valor="Fazer Login">Login</button>
+
+                </div>
+
+            </div>
+
+
+        </form>
+        <p id="mensagem" *ngIf=" mensagem != '' "> {{ mensagem }} </p>
+        <p *ngIf=" usuarioLogado != '' ">{{ usuarioLogado }}</p>
+
+    </div>
+</section>

@@ -1,0 +1,339 @@
+<!------- primeiro carousel ----------------->
+<section class="carousel" id="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div id="carousel-produtos" class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/produtos/pc-gamer-grande.png" alt="Computador Gamer" class="d-block w-100">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Tudo para você aquele compor aquele <a routerLink="#">Pc-gamer </a>monstro!!</h5>
+                    <p>Jogar com seus amigos é muito bom!! Com os equipamentos certos então a diversão fica
+                        completa!! Veja os novos produtos ..</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/produtos/noteBook Grande.png" alt="Img Notebook" class="d-block w-100">
+                <div class="carousel-caption  d-md-block" style=" color:red">
+                    <h5>Melhor equipamento para trabalho, Estudo...acesse <a routerLink="#">aqui</a>... </h5>
+                    <p>E veja as diversas opções desse equipamento fundamental para o seu dia a dia!!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/produtos/oculos jogos Grande.png" alt="Oculos Virtual" class="d-block w-100">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Diversão e novidades para você..acesse <a routerLink="#"> Aqui</a></h5>
+                    <p>Veja o que há de mais novo.. do que está em alta .. e os queridinhos do mundo Gamer!!.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!---------- secao das logo-marcas  ------->
+
+<section class="logos" aria-labelledby="Logo marcas">
+    <a routerLink=""><img style="border-radius: 50px;" src="assets/img/playstation.png" alt="PlayStation"></a>
+    <a routerLink=""><img src="assets/img/asus.png" alt="Asus"></a>
+    <a routerLink=""><img src="assets/img/corsair-logo-seeklogo.com.png" alt="Corsair"></a>
+    <a routerLink=""><img src="assets/img/xbox2 Pequeno.png" alt="Xbox"></a>
+    <a routerLink=""><img src="assets/img/nintendo_logo_icon_181362.png" alt="Nitendo"></a>
+    <a routerLink=""><img src="assets/img/logitech.png" alt="Logitech"></a>
+</section>
+
+<!-----------section menu horizontal--------->
+
+<section aria-label="Produtos por Setor" role="menubar">
+    <div class="menu-horizontal transitionDelay">
+
+        <div class="accordion " id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" role="menuitem">
+                        Pc-Gamer
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-1" role="menuitemradio">
+                            <a routerLink="">processadores</a>
+                            <a routerLink="">Placa Mãe</a>
+                            <a routerLink="">Memória RAM</a>
+                            <a routerLink="">HD</a>
+                            <a routerLink="">Gabinetes/Caixa</a>
+                            <a routerLink="">Placa de Vídeo</a>
+                            <a routerLink="">Fonte</a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="menuitem">
+                        Periféricos
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-2" role="menuitemradio">
+                            <a routerLink="#">Monitores</a>
+                            <a routerLink="#">Teclado</a>
+                            <a routerLink="#">mouse</a>
+                            <a routerLink="#">cabos</a>
+                            <a routerLink="#">impressoras</a>
+                            <a routerLink="#">outros</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                        role="menuitem">
+                        Games-Console
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-3" role="menuitemradio">
+                            <a routerLink="#">PlayStation</a>
+                            <a routerLink="#">Xbox</a>
+                            <a routerLink="#">Nintendo</a>
+                            <a routerLink="#"></a>
+                            <a routerLink="#"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                        role="menuitem">
+                        Celulares
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-4" role="menuitemradio">
+                            <a routerLink="#">Samsung</a>
+                            <a routerLink="#">Motorola</a>
+                            <a routerLink="#">Nokia</a>
+                            <a routerLink="#">Xiaomi</a>
+                            <a routerLink="#"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                        role="menuitem">
+                        Notebooks
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-5" role="menuitemradio">
+                            <a routerLink="#">Samsung</a>
+                            <a routerLink="#">Dell</a>
+                            <a routerLink="#">Lenovo</a>
+                            <a routerLink="#">Asus</a>
+                            <a routerLink="#">Acer</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" role="menuitem">
+                        Novidades
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="bt-6" role="menuitemradio">
+                            <a routerLink="#">Oculos virtual</a>
+                            <a routerLink="#">Controles Especias</a>
+                            <a routerLink="#"></a>
+                            <a routerLink="#"></a>
+                            <a routerLink="#"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------- section das novidades  ---->
+
+<div class="section-newAndPreview" aria-describedby="novidades">
+    <div class="newAndPreview">
+        <h2> Novidades e Lançamentos</h2>
+        <div id="novos-produtos" class="novidades-itens">
+            <div *ngFor="let produto of listaProdutos" class="new item">
+                <img [src]=produto.imagem alt=produto.imagem>
+                <p><a [routerLink]=produto.routerLink target="_blank">{{produto.name}}</a> {{produto.descricao}}</p>
+            </div>
+
+            <!--<div class="new item1">
+                <img src="assets/img/produtos/fifa-22-new-features.png" alt="fifa-EA">
+                <p><a routerLink="https://www.ea.com/pt-br/games/fifa/fifa-23">EletronicArts (EA)</a> comunicou
+                    encerramento de pareceria com a FIFA, com isso a
+                    desenvolvedora oficializou que o novo nome da marca será mesmo EASportsFC, novidades mais
+                    concretas em 2023...
+                    Enquanto isso curtam o lançamento do FIFA 2022.</p>
+            </div>
+            <div class="new item2">
+                <img src="assets/img/produtos/callDuty.png" alt="img callDuty">
+                <p><a routherLink="https://www.callofduty.com/br/pt">Call of Duty</a>: Modern Warfare II - novo jogo
+                    popular da franquia em primeira pessoa
+                    da Actvision chega em 28 de outubro para PlayStation 5 e 4, Xbox Series X/S e One, e para PC via
+                    os serviços de Battle.net e Steam. ( No Brasil será vendido exclusivamente em formato digital.)
+                </p>
+            </div> -->
+        </div>
+        <div class="gif-card">
+            <div class="gift-arrow animationPosition">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <a routerLink="compras.html" class="gif-icon" data-toggle="tooltip"><img src="assets/img/CARD-2.gif"
+                    alt="Cartão presente"></a>
+        </div>
+
+    </div>
+</div>
+
+<!--------- section jogos online ------------------>
+<div class="jogos-online">
+    <div class="jogos-inner">
+        <h2>Jogos online mais jogados!!!</h2>
+        <div id="jogos-online-list" class="jogos-itens">
+            <div *ngFor="let jogo of listaJogos" class="item obj-1">
+
+                <img [src]=jogo.imagem alt=jogo.imagem>
+                <p><a [routerLink]=jogo.routerLink>{{jogo.name}}</a>{{jogo.descricao}}</p>
+            </div>
+
+
+            <!-- <div class="item obj-1">
+
+                <img src="./Img/PUBG-Battlegrounds-900x503 1.pnPUBG-Battlegrounds-900x503 1.pngg" alt="img PUBG">
+                <p><a routerLink="https://na.battlegrounds.pubg.com">Battlegrounds(PUBG)</a> - é um jogo do gênero battle royale, uma mistura de
+                    sobrevivência e exploração de territórios.</p>
+            </div>
+            <div class="item obj-2">
+
+                <img src="./Img/minecraft.png" alt="Img cidade MineCraft">
+                <p><a routerLink="https://www.minecraft.net/pt-pt">Minecraft</a> - A ideia básica desse jogo que conquista multidões é a construção
+                    por blocos. Os competidores precisam recolher recursos para que possam sobreviver, criando
+                    ambientes de maneira criativa.</p>
+            </div>
+            <div class="item obj-3">
+
+                <img src="./Img/Fortinite.png" alt="img jogadorFortinite">
+                <p><a routerLink="https://www.epicgames.com/fortnite/pt-BR/home">Fortinite</a> - Um dos jogos mais populares e celebrados em todo o mundo, Fortnite
+                    foi lançado em 2017 e atraiu 125 milhões de jogadores somente no seu primeiro ano de
+                    estreia.</p>
+            </div>
+            <div class="item obj-4">
+
+                <img src="./Img/leagueOflegends.png" alt="img jogadorLOL">
+                <p>Conhecido como LOL, o <a routerLink="">League of Legends</a> - é o favorito entre os gamers,
+                    uma verdadeira febre no mundo dos jogos online! - O League of Legends conta com competições
+                    internacionais enormes, reunindo fãs de todos os lugares do mundo.</p>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+<!---------- segundo carousel direcionado a experiencia de clientes -->
+
+<div class="client">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 ">
+                    <div class="carousel-clientes ">
+                        <img src="assets/img/clientes/cliente gamer Grande.png" class="" alt=" Cliente-Joshua ">
+                        <div class="cliente-text">
+                            <h3>"Cliente Satisfeito!!"</h3><br>
+                            <p><B>Joshua - </B>"Meu trabalho é produzir e jogar aquilo que produzo, portanto tempo e
+                                qualidade de equipamento são essenciais.. Com a Game mania pude ....."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 ">
+                    <div class="carousel-clientes">
+                        <img src="assets/img/clientes/Cliente John Grande.png" class="" alt="cliente-John">
+                        <div class="cliente-text">
+                            <h3>"Cliente Satisfeito!!"</h3><br>
+                            <p><B>John - </B>"Uma empresa 100% comprometida com seus clientes,..."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 ">
+                    <div class="carousel-clientes">
+                        <img src="assets/img/clientes/cliente Peter Grande.png" class="" alt=" cliente-Peter">
+                        <div class="cliente-text">
+                            <h3>"Cliente Satisfeito!!"</h3><br>
+                            <p><B>Peter - </B>" Pra mim diversão não tem idade, tenho feito muito dos oculos
+                                virtuais adquiridos pela Game Mania....."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

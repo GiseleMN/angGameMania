@@ -1,0 +1,512 @@
+/* configurações do primeiro carousel*/
+.carousel img {
+    width: 100%;
+    height: 600px;
+}
+
+
+.carousel-control-prev {
+    z-index: 0;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+.carousel-caption h5 {
+    text-decoration-style: solid;
+}
+
+
+/* configurações das logos*/
+.logos {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(78, 89, 89), rgba(255, 255, 255, 0));
+}
+
+.logos img {
+    width: 90px;
+    height: 90px;
+
+}
+
+/* configurações do accordion menu-horizontal*/
+.menu-horizontal {
+    width: 100%;
+    height: 90px;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'work sans', sans-serif;
+}
+
+.transitionDelay:hover {
+    height: 100%;
+}
+
+.transitionDelay:not(.carousel) {
+    height: 0%;
+}
+
+
+#accordionExample {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accordion-item {
+    background-color: black;
+}
+
+.accordion-button {
+    background-color: black;
+    color: aliceblue;
+    margin: none;
+}
+
+.accordion-body ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: red;
+}
+
+/* configurações bloco de novidades*/
+.section-newAndPreview {
+    width: 100%;
+    padding: 30px;
+}
+
+.section-newAndPreview h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 50px;
+    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'work sans', sans-serif, white;
+}
+
+.novidades-itens p {
+    width: 50%;
+    height: 25%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'work sans', sans-serif;
+}
+
+.novidades-itens a {
+    color: red;
+}
+
+.novidades-itens img {
+    width: 50%;
+    height: 25%;
+    position: relative;
+    border-radius: 15px;
+}
+
+/* 
+.new img {
+    width: 60%;
+    height: 30%;
+    position: relative;
+    border-radius: 25px;
+    padding: 10px;
+} */
+
+
+/* 
+.item1 {
+    display: flex;
+    direction: rtl;
+    margin: 20px;
+}
+
+.item2 {
+    display: flex;
+}
+
+.item2 img {
+    position: relative;
+    top: -50px;
+}
+
+.item2 p {
+    margin-left: 30px;
+    margin-top: -40px;
+} 
+ */
+
+.gif-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gif-card img:hover {
+    transform: scale(1.2) rotateZ(360deg);
+    transition: transform 1s;
+}
+
+.gif-card i {
+    color: red;
+    font-size: 150px;
+}
+
+.gif-card img {
+    width: 90%;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -30px;
+}
+
+.gift-arrow {
+    width: 200px;
+    position: relative;
+}
+
+.animationPosition {
+    position: absolute;
+    animation: position 2s linear infinite;
+}
+
+@keyframes position {
+    0% {
+        left: 35%;
+    }
+
+    25% {
+        left: 50%;
+    }
+
+    50% {
+        left: 35%;
+    }
+
+    75% {
+        left: 50%;
+    }
+
+    100% {
+        left: 35%
+    }
+}
+
+
+/* configurações area jogos online*/
+
+.jogos-online {
+    width: 100%;
+    background-color: black;
+}
+
+.jogos-inner {
+    padding: 40px;
+    color: aliceblue;
+}
+
+.jogos-inner h2 {
+    font-size: 30px;
+    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.jogos-itens {
+    margin-top: 30px;
+}
+
+.item {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    align-items: initial;
+}
+
+.item p {
+    margin: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.item a {
+    text-decoration: underline;
+    color: red;
+}
+
+.item img {
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+/* 
+.obj-2 img,
+.obj-3 img,
+.obj-4 img {
+    width: 500px;
+    height: 300px
+}
+
+.obj-2,
+.obj-4 {
+    direction: rtl;
+    margin-top: -50px;
+    height: 50%px;
+}
+
+.obj-3 {
+    margin-top: -50px
+} */
+
+/* configurações carousel clientes*/
+.client {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(78, 89, 89) 40%, transparent);
+}
+
+.carousel-clientes {
+    display: inline-flex;
+    padding: 50px;
+}
+
+.carousel-clientes img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.cliente-text {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1200) {
+
+    /* primeiro carousel*/
+    .carousel img {
+        height: 450px;
+    }
+
+    /* secao de logos */
+    .logos img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* secao de novidades */
+    /* .novidades-itens p {
+        font-size: 18px;
+    } */
+
+    /* secao jogos-online*/
+    .item p {
+        font-size: 18px;
+    }
+
+    .item img {
+        width: 40%;
+        height: 40%;
+    }
+
+    /* secao clientes comentarios */
+    .cliente-text {
+        width: 40%;
+        height: 40%;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* primeiro carousel*/
+    .carousel img {
+        height: 300px;
+    }
+
+    .carousel h5 {
+        display: show;
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+    /* secao de logos*/
+    .logos {
+        height: 50px;
+    }
+
+    .logos img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* menu horizontal*/
+    .accordion-button,
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*novidades */
+    /* .section-newAndPreview h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .new {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new p {
+        width: 100vw;
+        font-size: 15px;
+    } */
+
+
+    .gif-card i {
+        font-size: 50px;
+
+    }
+
+    .gif-card img {
+        height: 120px;
+    }
+
+    /* jogos online  */
+    .jogos-inner h2 {
+        font-size: 20px;
+    }
+
+
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
+    .item img {
+        width: 50%;
+        height: 50%;
+    }
+
+    /* .obj-3,
+    .obj-4 {
+        display: none;
+    } */
+
+    /* carousel clientes*/
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-clientes img {
+        display: none;
+    }
+
+    .cliente-text {
+        width: 300px;
+        margin-top: -50px;
+    }
+
+    .cliente-text h3 {
+        font-size: 18px;
+
+    }
+
+    .cliente-text p {
+        font-size: 16px;
+    }
+}
+
+/* ------secao produtos novos---- */
+.section-newAndPreview h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 50px;
+    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'work sans', sans-serif;
+    color: white;
+}
+
+.novidades-itens p {
+    width: 50%;
+    height: 25%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'work sans', sans-serif;
+}
+
+.novidades-itens a {
+    color: red;
+}
+
+@media screen and (min-width: 1200px) {
+    .novidades-itens p {
+        font-size: 18px;
+    }
+
+    .new img {
+        width: 40%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-newAndPreview h2 {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .new {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new p {
+        width: 100vw;
+        font-size: 15px;
+    }
+
+    .new img {
+        width: 50%;
+        height: 50%;
+
+    }
+}

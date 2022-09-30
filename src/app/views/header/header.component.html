@@ -1,0 +1,45 @@
+<header>
+    <nav>
+
+        <div id='' class="menuBurguer" aria-label='Abrir Menu' aria-controls="menu" aria-haspopup='true'
+            aria-expanded="false" #menuBurguer>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navList" role="menu" aria-label="Menu" #navList>
+            <li #navLinks><a href="">Contato</a>
+                <ul class="menu-list">
+                    <li>Telefone </li>
+                    <li>Telefone </li>
+                    <li>Email </li>
+                </ul>
+            </li>
+            <li #navLinks><a routerLink='login'>Suas Compras</a>
+                <ul class="menu-list">
+                    <li>Carrinho</li>
+                    <li>Acompanhe sua compra</li>
+                    <li>Compras Recebidas</li>
+                </ul>
+            </li>
+            <li #navLinks><a href="">informações</a></li>
+            <li #navLinks><a href="">Sobre</a></li>
+
+        </ul>
+    </nav>
+    <a class="logo-principal"><img src="assets/img/logo.png" alt="Logo"></a>
+
+    <div class="bar-search active" method="get" id="search" aria-label="Procurar" role="search">
+        <input class="cx-search" type="search" placeholder=" O que procura?..." name="search" id="search-bar"
+            autocomplete required />
+        <button class="bt-search type=" submit name="search" id="search"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="info-compras">
+
+        <a href=""><img src="assets/img/red-localizador.gif" alt="localizador" aria-label="Localizar sua compra"
+                arial-haspopup='true'></a>
+        <a href=""><img src="assets/img/red-tele.gif" alt="telefone" aria-label="Telefone" arial-haspopup='true'></a>
+        <a routerLink="login" target="_blank" aria-label="Carrinho de compras" aria-haspopup="true"><img
+                src="assets/img/red-cart.gif" alt="Carrinho de compras"></a>
+    </div>
+</header>

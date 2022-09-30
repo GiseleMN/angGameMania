@@ -1,0 +1,124 @@
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 0;
+    align-items: center;
+    background: linear-gradient(180deg, #ff0000ab, transparent);
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 40px;
+    border-radius: 18px;
+    background: linear-gradient(to bottom, #cccccc 20%, black 95%);
+    box-shadow: 1px 1px 20px, #000000;
+}
+
+
+.p-box {
+    width: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-logar h1 {
+    font-size: 25px;
+    text-shadow: #535353 0px 15px 5px, black 0px 5px 20px;
+
+}
+
+.area-logar {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-logar img {
+    width: 120px;
+    height: 110px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+
+label {
+    padding: 8px;
+}
+
+.box-input {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 35px;
+    border-radius: 10px;
+}
+
+/* 
+.salvar-senha {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+} */
+
+.area-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fazer-cadastro p {
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+}
+
+.fazer-cadastro a {
+    font-size: 20px;
+    color: red;
+}
+
+.area-cadastro button {
+    align-items: center;
+    background-color: rgb(143, 23, 23);
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        width: max-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: max-content;
+    }
+
+    footer {
+        display: none;
+    }
+
+
+}

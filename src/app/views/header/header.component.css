@@ -1,0 +1,281 @@
+/* configurações no header*/
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    margin-bottom: none;
+}
+
+.logo-principal img {
+    width: 75px;
+    height: 70px;
+    margin: 10px;
+}
+
+
+/* menu-hamburguer*/
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'work sans', sans-serif;
+}
+
+.nav-list li a {
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.menu-burguer {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-burguer.is-open {
+    display: block;
+    position: absolute;
+}
+
+.fa-bars {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.menu-list {
+    display: flex;
+    gap: 15%;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    top: 90px;
+    padding: 10px;
+    left: 0;
+    width: 50%;
+    height: 90vh;
+    background: rgb(61, 60, 62);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    z-index: 2;
+    list-style: none;
+}
+
+
+/* 
+.nav-list {
+    display: flex;
+    gap: 15%;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    top: 90px;
+    padding: 10px;
+    left: 0;
+    width: 50%;
+    height: 90vh;
+    background: rgb(61, 60, 62);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    z-index: 2;
+    list-style: none;
+
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.nav-list li {
+    width: 90%;
+    margin-right: 20px;
+    opacity: 0;
+    color: aliceblue;
+    font-size: 18px;
+    list-style: none;
+
+}
+
+.mobile-menu {
+    display: block;
+}
+
+.nav-list a {
+    overflow: visible;
+}
+
+@keyframes navLinkFade {
+    form {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-9px, -9px);
+
+} */
+
+
+/* barra de pesquisa*/
+.bar-search {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: aliceblue;
+
+}
+
+.cx-search,
+.bt-search {
+    border: none;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.cx-search {
+    display: block;
+    width: 90%;
+}
+
+.bt-search {
+    cursor: pointer;
+    color: aliceblue;
+    background: none;
+}
+
+.bt-search i {
+    font-size: 25px;
+}
+
+.bt-search:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/* botoes de informacoes e cartShopping*/
+.info-compras {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.info-compras img {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+header img {
+    margin-right: -80px;
+}
+
+@media screen and (max-width:1200px) {
+
+    /*header*/
+    header {
+        height: 75px;
+    }
+
+    .nav-list {
+        top: 7vh
+    }
+
+    .nav-list a {
+        font-size: 18px;
+    }
+
+    .nav-list li {
+        font-size: 16px;
+    }
+
+    .logo-principal img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+        display: flex;
+        flex-basis: 30vw;
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-2px, 3px);
+    }
+
+    .nav-list {
+        top: 6vh;
+    }
+
+    .nav-list a {
+        font-size: 16px;
+    }
+
+    .nav-list li {
+        font-size: 14px;
+    }
+
+    .mobile-menu div {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+    }
+
+    .logo-principal img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bar-search {
+        border: none;
+    }
+
+    .bar-search i {
+        background-color: aliceblue;
+        color: black;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+
+    .cx-search {
+        width: 50%;
+        background-color: black;
+        color: aliceblue;
+    }
+
+    .info-compras {
+        display: none;
+    }
+
+}
