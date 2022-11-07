@@ -1,4 +1,4 @@
-export interface Jogos {
+export interface Jogo {
     id?: number,
     imagem: string,
     descricaoImg: string,

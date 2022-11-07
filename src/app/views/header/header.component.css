@@ -1,175 +1,67 @@
 /* configurações no header*/
 header {
     width: 100%;
-    height: 90px;
+    margin-bottom: none;
+}
+
+.header-content {
+    width: max-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
-    margin-bottom: none;
 }
+
 
 .logo-principal img {
     width: 75px;
     height: 70px;
-    margin: 10px;
+
 }
 
-
-/* menu-hamburguer*/
-
-
-nav {
+.navbar-nav li {
     display: flex;
-    justify-content: space-around;
+    color: rgb(98, 90, 90);
+    font-size: 18px;
     align-items: center;
     font-family: 'work sans', sans-serif;
 }
 
-.nav-list li a {
+.nav-link {
+    color: black;
+}
+
+.nav-item a {
     text-transform: uppercase;
-    color: aliceblue;
+    color: #de3434;
     letter-spacing: 3px;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.menu-burguer {
-    cursor: pointer;
-    display: none;
-}
-
-.menu-burguer.is-open {
-    display: block;
-    position: absolute;
-}
-
-.fa-bars {
-    font-size: 40px;
-    color: aliceblue;
-}
-
-.menu-list {
-    display: flex;
-    gap: 15%;
-    position: absolute;
-    align-items: center;
-    flex-direction: column;
-    top: 90px;
-    padding: 10px;
-    left: 0;
-    width: 50%;
-    height: 90vh;
-    background: rgb(61, 60, 62);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in;
-    z-index: 2;
-    list-style: none;
-}
-
-
-/* 
-.nav-list {
-    display: flex;
-    gap: 15%;
-    position: absolute;
-    align-items: center;
-    flex-direction: column;
-    top: 90px;
-    padding: 10px;
-    left: 0;
-    width: 50%;
-    height: 90vh;
-    background: rgb(61, 60, 62);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in;
-    z-index: 2;
-    list-style: none;
-
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-.nav-list li {
-    width: 90%;
-    margin-right: 20px;
-    opacity: 0;
-    color: aliceblue;
-    font-size: 18px;
-    list-style: none;
-
-}
-
-.mobile-menu {
-    display: block;
-}
-
-.nav-list a {
-    overflow: visible;
-}
-
-@keyframes navLinkFade {
-    form {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-9px, -9px);
-
-} */
-
-
-/* barra de pesquisa*/
-.bar-search {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    padding: 5px;
-    border-radius: 20px;
-    border: 2px solid;
-    border-color: aliceblue;
-
-}
-
-.cx-search,
-.bt-search {
-    border: none;
-    border-radius: 20px;
-    padding: 2px;
+.navbar-toggler {
+    margin-right: 2rem;
 }
 
 .cx-search {
+    height: 40px;
     display: block;
     width: 90%;
+    background-color: #1e1616;
+    border-color: #1e1616;
+    border-radius: 15px 0 0 15px;
 }
 
 .bt-search {
+    height: 40px;
     cursor: pointer;
     color: aliceblue;
-    background: none;
+    background: black;
+    border-color: #1e1616;
+    border-radius: 0 15px 15px 0;
 }
 
 .bt-search i {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .bt-search:hover {
@@ -181,21 +73,19 @@ nav {
 /* botoes de informacoes e cartShopping*/
 .info-compras {
     display: flex;
-    justify-content: space-between;
-    width: 100px;
-    margin-right: 50px;
+    justify-content: space-evenly;
+    width: 150px;
+    margin-right: 30px;
+    margin-left: 30rem;
 }
 
-.info-compras img {
-    height: 50px;
-    width: 50px;
-    padding: 5px;
-    border-radius: 50px;
+.info-compras i {
+    font-size: 35px;
+    color: aliceblue;
+    border-radius: 50%;
+
 }
 
-header img {
-    margin-right: -80px;
-}
 
 @media screen and (max-width:1200px) {
 
@@ -220,6 +110,18 @@ header img {
         width: 60px;
         height: 60px;
     }
+
+    .bar-search {
+        margin-left: 2rem;
+    }
+
+    .info-compras {
+        margin-left: 7rem;
+    }
+
+    .info-compras i {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -243,6 +145,10 @@ header img {
 
     .nav-list li {
         font-size: 14px;
+    }
+
+    .bar-search {
+        margin-left: none;
     }
 
     .mobile-menu div {
@@ -270,7 +176,7 @@ header img {
 
     .cx-search {
         width: 50%;
-        background-color: black;
+        background-color: #1e1616;
         color: aliceblue;
     }
 

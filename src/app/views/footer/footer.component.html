@@ -38,11 +38,11 @@
             <div class="pagamentos">
                 <h4> Formas de Pagamento</h4>
                 <div class="formas-pagar ">
-                    <img src="assets/img/americanex Pequeno.png">
-                    <img src="assets/img/paypall.png">
-                    <img src="assets/img/visa.png">
-                    <img src="assets/img/masterCard.png">
-                    <img src="assets/img/boleto.png">
+                    <img src="https://icongr.am/fontawesome/cc-mastercard.svg?size=100&color=e67a4c">
+                    <img src="https://icongr.am/fontawesome/cc-paypal.svg?size=100&color=4cabe6">
+                    <img src="https://icongr.am/fontawesome/cc-amex.svg?size=100&color=3a609c">
+                    <img src="https://icongr.am/fontawesome/cc-visa.svg?size=100&color=e6cc4c">
+                    <img src="https://icongr.am/fontawesome/barcode.svg?size=100&color=ffffff">
                 </div>
             </div>
             <div class="redes-socias">
@@ -54,7 +54,12 @@
                 </div>
             </div>
             <div class="cadastro-email">
-                <a routerLink="home"><img src="assets/img/logo.png" alt="logo"></a>
+                <a routerLink="home">
+                    <span id="nameLogo">Game</span>
+                    <i id="logoName">Mania</i>
+                    <i id="nameLogo" class="bi bi-controller"></i>
+                    <!-- <img src="assets/img/logo.png" alt="logo"> -->
+                </a>
                 <p>Cadastre-se abaixo para receber ofertas exclusivas!!</p>
                 <form class="bar-cadastro" method="get" #userForm="ngForm">
                     <input id="campo-email" class="box-cadastro" type="email" placeholder="Digite o seu e-mail"

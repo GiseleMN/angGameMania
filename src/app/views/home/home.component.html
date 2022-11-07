@@ -201,87 +201,10 @@
 </section>
 
 <!----------- section das novidades  ---->
-
-<div class="section-newAndPreview" aria-describedby="novidades">
-    <div class="newAndPreview">
-        <h2> Novidades e Lançamentos</h2>
-        <div id="novos-produtos" class="novidades-itens">
-            <div *ngFor="let produto of listaProdutos" class="new item">
-                <img [src]=produto.imagem alt=produto.imagem>
-                <p><a [routerLink]=produto.routerLink target="_blank">{{produto.name}}</a> {{produto.descricao}}</p>
-            </div>
-
-            <!--<div class="new item1">
-                <img src="assets/img/produtos/fifa-22-new-features.png" alt="fifa-EA">
-                <p><a routerLink="https://www.ea.com/pt-br/games/fifa/fifa-23">EletronicArts (EA)</a> comunicou
-                    encerramento de pareceria com a FIFA, com isso a
-                    desenvolvedora oficializou que o novo nome da marca será mesmo EASportsFC, novidades mais
-                    concretas em 2023...
-                    Enquanto isso curtam o lançamento do FIFA 2022.</p>
-            </div>
-            <div class="new item2">
-                <img src="assets/img/produtos/callDuty.png" alt="img callDuty">
-                <p><a routherLink="https://www.callofduty.com/br/pt">Call of Duty</a>: Modern Warfare II - novo jogo
-                    popular da franquia em primeira pessoa
-                    da Actvision chega em 28 de outubro para PlayStation 5 e 4, Xbox Series X/S e One, e para PC via
-                    os serviços de Battle.net e Steam. ( No Brasil será vendido exclusivamente em formato digital.)
-                </p>
-            </div> -->
-        </div>
-        <div class="gif-card">
-            <div class="gift-arrow animationPosition">
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-            <a routerLink="compras.html" class="gif-icon" data-toggle="tooltip"><img src="assets/img/CARD-2.gif"
-                    alt="Cartão presente"></a>
-        </div>
-
-    </div>
-</div>
+<app-novos-produtos></app-novos-produtos>
 
 <!--------- section jogos online ------------------>
-<div class="jogos-online">
-    <div class="jogos-inner">
-        <h2>Jogos online mais jogados!!!</h2>
-        <div id="jogos-online-list" class="jogos-itens">
-            <div *ngFor="let jogo of listaJogos" class="item obj-1">
-
-                <img [src]=jogo.imagem alt=jogo.imagem>
-                <p><a [routerLink]=jogo.routerLink>{{jogo.name}}</a>{{jogo.descricao}}</p>
-            </div>
-
-
-            <!-- <div class="item obj-1">
-
-                <img src="./Img/PUBG-Battlegrounds-900x503 1.pnPUBG-Battlegrounds-900x503 1.pngg" alt="img PUBG">
-                <p><a routerLink="https://na.battlegrounds.pubg.com">Battlegrounds(PUBG)</a> - é um jogo do gênero battle royale, uma mistura de
-                    sobrevivência e exploração de territórios.</p>
-            </div>
-            <div class="item obj-2">
-
-                <img src="./Img/minecraft.png" alt="Img cidade MineCraft">
-                <p><a routerLink="https://www.minecraft.net/pt-pt">Minecraft</a> - A ideia básica desse jogo que conquista multidões é a construção
-                    por blocos. Os competidores precisam recolher recursos para que possam sobreviver, criando
-                    ambientes de maneira criativa.</p>
-            </div>
-            <div class="item obj-3">
-
-                <img src="./Img/Fortinite.png" alt="img jogadorFortinite">
-                <p><a routerLink="https://www.epicgames.com/fortnite/pt-BR/home">Fortinite</a> - Um dos jogos mais populares e celebrados em todo o mundo, Fortnite
-                    foi lançado em 2017 e atraiu 125 milhões de jogadores somente no seu primeiro ano de
-                    estreia.</p>
-            </div>
-            <div class="item obj-4">
-
-                <img src="./Img/leagueOflegends.png" alt="img jogadorLOL">
-                <p>Conhecido como LOL, o <a routerLink="">League of Legends</a> - é o favorito entre os gamers,
-                    uma verdadeira febre no mundo dos jogos online! - O League of Legends conta com competições
-                    internacionais enormes, reunindo fãs de todos os lugares do mundo.</p>
-            </div> -->
-
-        </div>
-    </div>
-</div>
+<app-jogos></app-jogos>
 
 <!---------- segundo carousel direcionado a experiencia de clientes -->
 

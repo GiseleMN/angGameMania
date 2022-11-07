@@ -21,3 +21,13 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
+#nameLogo {
+    color: #de3434;
+    font-size: 30px;
+}
+
+#logoName {
+    color: aliceblue;
+    font-size: 30px;
+}

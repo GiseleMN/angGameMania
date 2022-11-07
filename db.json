@@ -11,6 +11,12 @@
       "password": "321",
       "name": "kevin",
       "id": 2
+    },
+    {
+      "email": "kan@email.com",
+      "password": "senha231",
+      "name": "karen",
+      "id": 3
     }
   ],
   "jogos": [

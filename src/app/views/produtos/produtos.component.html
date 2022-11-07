@@ -1,8 +1,36 @@
-<div class="new item1">
-    <img src="assets/img/produtos/fifa-22-new-features.png" alt="fifa-EA">
-    <p><a routerLink="https://www.ea.com/pt-br/games/fifa/fifa-23">EletronicArts (EA)</a> comunicou
-        encerramento de pareceria com a FIFA, com isso a
-        desenvolvedora oficializou que o novo nome da marca será mesmo EASportsFC, novidades mais
-        concretas em 2023...
-        Enquanto isso curtam o lançamento do FIFA 2022.</p>
+<div class="section-newAndPreview" aria-describedby="novidades">
+    <div class="newAndPreview">
+        <h2> Novidades e Lançamentos</h2>
+        <div id="novos-produtos" class="novidades-itens">
+            <div *ngFor="let produto of listaProdutos" class="new item">
+                <img [src]=produto.imagem alt=produto.imagem>
+                <p><a [routerLink]=produto.routerLink target="_blank">{{produto.name}}</a> {{produto.descricao}}</p>
+            </div>
+
+            <!--<div class="new item1">
+                <img src="assets/img/produtos/fifa-22-new-features.png" alt="fifa-EA">
+                <p><a routerLink="https://www.ea.com/pt-br/games/fifa/fifa-23">EletronicArts (EA)</a> comunicou
+                    encerramento de pareceria com a FIFA, com isso a
+                    desenvolvedora oficializou que o novo nome da marca será mesmo EASportsFC, novidades mais
+                    concretas em 2023...
+                    Enquanto isso curtam o lançamento do FIFA 2022.</p>
+            </div>
+            <div class="new item2">
+                <img src="assets/img/produtos/callDuty.png" alt="img callDuty">
+                <p><a routherLink="https://www.callofduty.com/br/pt">Call of Duty</a>: Modern Warfare II - novo jogo
+                    popular da franquia em primeira pessoa
+                    da Actvision chega em 28 de outubro para PlayStation 5 e 4, Xbox Series X/S e One, e para PC via
+                    os serviços de Battle.net e Steam. ( No Brasil será vendido exclusivamente em formato digital.)
+                </p>
+            </div> -->
+        </div>
+        <div class="gif-card">
+            <div class="gift-arrow animationPosition">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <a routerLink="compras.html" class="gif-icon" data-toggle="tooltip"><img src="assets/img/CARD-2.gif"
+                    alt="Cartão presente"></a>
+        </div>
+
+    </div>
 </div>

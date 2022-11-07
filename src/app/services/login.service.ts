@@ -12,12 +12,12 @@ export class LoginService {
 
   url = "http://localhost:3000/user"
 
-  // Aplication/json
-  // observe: responde
+  //headers: 'content-type': 'aplication-json'
+  // observe: 'response'
 
   login(user: User): Observable<any> {
     return this.httpClient.post(this.url, JSON.stringify(user), {
-      headers: new HttpHeaders({ 'Content-Type': 'aplication/josn' }),
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
       observe: "response"
     })
 

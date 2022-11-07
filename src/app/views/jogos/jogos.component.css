@@ -1,3 +1,5 @@
+/* configurações area jogos online*/
+
 .jogos-online {
     width: 100%;
     background-color: black;
@@ -10,13 +12,15 @@
 
 .jogos-inner h2 {
     font-size: 30px;
-    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    background: linear-gradient(270deg, rgba(78, 89, 89) 40%, white);
     padding: 10px;
     border-radius: 20px;
+    color: black;
 }
 
 .jogos-itens {
     margin-top: 30px;
+
 }
 
 .item {
@@ -24,10 +28,14 @@
     padding: 20px;
     position: relative;
     align-items: initial;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 .item p {
-    margin: 30px;
+    margin-left: 20px;
     font-size: 20px;
     text-align: left;
 }
@@ -38,27 +46,49 @@
 }
 
 .item img {
-    width: 50%;
-    height: 50%;
-    padding: 20px;
-    border: 3px solid white;
-    border-radius: 20px;
+    width: 280px;
+    height: 280px;
+
 }
 
+/* 
 .obj-2 img,
 .obj-3 img,
 .obj-4 img {
-    width: 350px;
-    height: 200px;
+    width: 500px;
+    height: 300px
 }
 
 .obj-2,
 .obj-4 {
     direction: rtl;
     margin-top: -50px;
-    height: 50%;
+    height: 50%px;
 }
 
 .obj-3 {
-    margin-top: -50px;
+    margin-top: -50px
+} */
+
+@media screen and (max-width: 768px) {
+
+    /* secao jogos-online*/
+
+    .jogos-inner h2 {
+        font-size: 20px;
+    }
+
+    .item p {
+        font-size: 16px;
+    }
+
+    .item img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .item {
+        padding: 10px;
+        margin: 10px;
+    }
 }

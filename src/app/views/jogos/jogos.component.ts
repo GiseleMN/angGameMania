@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Jogos } from 'src/app/models/jogos';
+import { Jogo } from 'src/app/models/jogo';
+import { JogoService } from 'src/app/services/jogo.service';
 
 @Component({
   selector: 'app-jogos',
@@ -8,11 +9,20 @@ import { Jogos } from 'src/app/models/jogos';
 })
 export class JogosComponent implements OnInit {
 
-  listaJogos = [] as Jogos[];
+  listaJogos = [] as Jogo[];
 
-  constructor() { }
+  constructor(private jogoService: JogoService) { }
 
   ngOnInit(): void {
+    this.carregarJogos();
+  }
+
+
+  carregarJogos() {
+    this.jogoService.getJogos().subscribe((jogosRecebido: Jogo[]) => {
+      this.listaJogos = jogosRecebido;
+      console.log(this.listaJogos);
+    })
   }
 
 }

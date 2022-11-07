@@ -1,17 +1,31 @@
+.section-newAndPreview {
+    width: 100%;
+    padding: 30px;
+}
+
 .section-newAndPreview h2 {
-    text-transform: uppercase;
     font-size: 30px;
     margin: 50px;
-    background: linear-gradient(180deg, #ff3535, #c3c3c3);
+    background: linear-gradient(270deg, rgba(78, 89, 89) 40%, transparent);
     padding: 10px;
     border-radius: 20px;
     font-family: 'work sans', sans-serif bold;
+
+}
+
+.novidades-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(236, 137, 137), transparent);
 }
 
 .novidades-itens p {
     width: 50%;
     height: 25%;
-    padding: 20px;
+    margin-left: 15px;
     text-align: left;
     font-size: 20px;
     font-family: 'work sans', sans-serif;
@@ -22,12 +36,28 @@
 }
 
 .novidades-itens img {
-    width: 50%;
-    height: 25%;
+    width: 350px;
+    height: 200px;
+    margin: 15px;
     position: relative;
     border-radius: 15px;
 }
 
+.new {
+    display: flex;
+}
+
+/* 
+.new img {
+    width: 60%;
+    height: 30%;
+    position: relative;
+    border-radius: 25px;
+    padding: 10px;
+} */
+
+
+/* 
 .item1 {
     display: flex;
     direction: rtl;
@@ -46,11 +76,73 @@
 .item2 p {
     margin-left: 30px;
     margin-top: -40px;
+} 
+ */
+
+.gif-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gif-card img:hover {
+    transform: scale(1.2) rotateZ(360deg);
+    transition: transform 1s;
+}
+
+.gif-card i {
+    color: red;
+    font-size: 150px;
+}
+
+.gif-card img {
+    width: 90%;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -30px;
+}
+
+.gift-arrow {
+    width: 200px;
+    position: relative;
+}
+
+.animationPosition {
+    position: absolute;
+    animation: position 2s linear infinite;
+}
+
+@keyframes position {
+    0% {
+        left: 35%;
+    }
+
+    25% {
+        left: 50%;
+    }
+
+    50% {
+        left: 35%;
+    }
+
+    75% {
+        left: 50%;
+    }
+
+    100% {
+        left: 35%
+    }
 }
 
 @media screen and (max-width:1200) {
 
-    /* secao de novidades */
+    .section-newAndPreview h2 {
+        font-size: 20px;
+
+    }
+
     .novidades-itens p {
         font-size: 18px;
     }
@@ -72,9 +164,18 @@
         align-items: center;
     }
 
-    .new p {
+    .novidades-itens img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .novidades-itens p {
         width: 100vw;
         font-size: 15px;
+    }
+
+    .gif-card img {
+        height: 120px;
     }
 
 }
