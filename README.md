@@ -1,6 +1,8 @@
 # GameMania <img src="https://icongr.am/material/gamepad-square.svg?size=63&color=a72f2f">
 
-### Nesse projeto foi feito o uso do postman, Json-server como API fake para simulação.
+### Primeiro projeto em angular
+
+###  Nesse projeto foi feito o uso do postman, Json-server como API fake para simulação.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
