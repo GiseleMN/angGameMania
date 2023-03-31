@@ -1,6 +1,8 @@
 # GameMania <img src="https://icongr.am/material/gamepad-square.svg?size=63&color=a72f2f">
 
-### Primeiro projeto em angular
+### Primeiro projeto em angular 
+#### ( Projeto realizado em aprendizado de : HTML, CSS, BOOTSTRAP, ANGULAR) 
+### Para esse projeto fiz uso do Bootstrap para estilização
 
 ###  Nesse projeto foi feito o uso do postman, Json-server como API fake para simulação.
 
